@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>书籍列表</title>
+</head>
+<body>
+    <h1>书籍列表</h1>
+
+    {% for book in books %}
+        <ul>
+            <li>Title: {{ book.title }}</li>
+            <li>Subtitle: {{ book.subtitle }}</li>
+            <li>Author: {{ book.author }}</li>
+            <li>ISBN: {{ book.isbn }}</li>
+        </ul>
+    {% endfor %}
+</body>
+</html>
